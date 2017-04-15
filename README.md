@@ -1,2 +1,2 @@
 # DSR
-Dynamic Structural Response Solver based on Julia
+A Dynamic Structural Response solver based on Julia
