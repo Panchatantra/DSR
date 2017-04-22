@@ -1,6 +1,6 @@
 module DSR
 
-export SDF, SDF_VD, SDF_FD, SDF_MYD_BW, SDF_MAXWELL_VD, response
+export SDF, SDF_VD, SDF_FD, SDF_MYD_BW, SDF_MYD_EP, SDF_MAXWELL_VD, response
 
 const g = 9.8
 
@@ -72,6 +72,11 @@ function readtxt(fn::String; skiprows::Int64=0, delim::Char=' ')
     else
         return data
     end
+end
+
+
+function savetxt(fn::String, A::AbstractArray{Float64}; delim::Char=' ')
+    writedlm(fn, A, delim)
 end
 
 
