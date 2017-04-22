@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 # DSR
 A Dynamic Structural Response solver based on Julia
 
@@ -13,6 +15,7 @@ By using DSR, the response can be solved as follows.
 
 ```julia
 using DSR
+
 T, zta = 1.0, 0.05
 omg = 2.0*pi/T
 t1, dt = 40, 0.005
