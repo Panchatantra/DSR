@@ -7,7 +7,7 @@ A Dynamic Structural Response solver based on Julia
 
 For a classic Single-Degree-of-Freedom system under resonant harmonic load, the equation of motion is
 
-![eq1](http://www.sciweavers.org/tex2img.php?eq=%5Cddot%7Bu%7D%20%2B%202%20%5Czeta%20%5Comega%20%5Cdot%7Bu%7D%20%2B%20%5Comega%5E2%20u%20%3D%20%5Csin%20%28%5Comega%20t%29%20&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0)
+![eq1](Docs/eq1.png)
 
 By using DSR, the response can be solved as follows. 
 
@@ -35,4 +35,4 @@ ylabel("Displacement [m]")
 show()
 ```
 
-![resonant_response.png](resonant_response.png "Resonant Response")
+![resonant_response.png](Docs/resonant_response.png "Resonant Response")
