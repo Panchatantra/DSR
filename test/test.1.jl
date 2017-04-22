@@ -1,7 +1,7 @@
 using PyPlot
 # plt[:style][:use]("ggplot")
 plt[:rcParams]["font.family"][1] = "serif"
-# include("DSR.jl")
+# include("../src/DSR.jl")
 using DSR
 
 function test()
@@ -18,7 +18,7 @@ function test()
     xlabel("Time [s]")
     ylabel("Displacement [m]")
     grid(true)
-    savefig("resonant_response.png"; dpi=72, bbox_inches="tight")
+    # savefig("resonant_response.png"; dpi=72, bbox_inches="tight")
     show()
 end
 

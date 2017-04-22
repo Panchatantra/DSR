@@ -1,8 +1,8 @@
 using PyPlot
 # plt[:style][:use]("ggplot")
 plt[:rcParams]["font.family"][1] = "serif"
-include("DSR.jl")
-# using DSR
+# include("../src/DSR.jl")
+using DSR
 
 function test()
 
@@ -40,7 +40,7 @@ function test()
     r0 = DSR.response(s0, a_g, dt_g, dt, nstep)
     r  = DSR.response(s,  a_g, dt_g, dt, nstep)
 
-    figure(1,(10,10))
+    figure(1,(9,7.5))
     subplot(3,1,1)
     plot(r0[:,1],r0[:,2])
     plot(r[:,1], r[:,2])
