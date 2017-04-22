@@ -16,7 +16,7 @@ using DSR
 
 T, zta = 1.0, 0.05
 omg = 2.0*pi/T
-t1, dt = 40, 0.005
+t1, dt = 20.0, 0.005
 s = SDF(omg, zta)
 p = (t) -> sin(2.0*π/T*t)
 r = response(s,p,t1,dt)
