@@ -11,6 +11,14 @@ type SDF_VD <: SDFDynamicSystem
 end
 
 
+function SDF_VD(m::Float64, c::Float64, k::Float64, c_d::Float64, alpha::Float64)
+    omg = sqrt(k/m)
+    zta = c/(2.0*m*omg)
+    xi = c_d/(2.0*m*omg)
+    SDF_VD(omg, zta, xi, alpha)
+end
+
+
 function systemEquation(s::SDF_VD, p::Function)
     function dydt(y::AbstractArray{Float64,1}, t::Float64)
         if s.alpha == 1.0

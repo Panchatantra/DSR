@@ -1,6 +1,7 @@
 module DSR
 
 export SDF, SDF_VD, SDF_FD, SDF_MYD_BW, SDF_MYD_EP, SDF_MAXWELL_VD, response
+export readtxt, savetxt
 
 const g = 9.8
 
