@@ -7,9 +7,9 @@ A Dynamic Structural Response solver based on Julia
 
 For a classic Single-Degree-of-Freedom system under resonant harmonic load, the equation of motion is
 
-![eq1](Docs/eq1.png)
+![eq1](Docs/Eqn1.gif)
 
-By using DSR, the response can be solved as follows. 
+By using DSR, the response can be solved as follows.
 
 ```julia
 using DSR
